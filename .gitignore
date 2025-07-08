@@ -178,3 +178,4 @@ scripts
 tmp/
 
 *.pyc
+.DS_Store

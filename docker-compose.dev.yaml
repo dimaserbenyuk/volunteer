@@ -22,6 +22,9 @@ services:
     env_file: .env
     environment:
       - REDIS_HOST=redis
+    volumes:
+      - static_volume:/app/static
+      - media_volume:/app/media
     ports:
       - "8000:8000"
     depends_on:
