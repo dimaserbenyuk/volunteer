@@ -1,10 +1,15 @@
 name: Docker
 
-on:
-  push:
-    tags: [ "*" ]
+# on:
+#   push:
+#     tags: [ "*" ]
   # pull_request:
   #   branches: [ master ]
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
     
 env:
   # Use docker.io for Docker Hub if empty
